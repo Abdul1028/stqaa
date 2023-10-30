@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script tpye="text/javascript">
+            function gcd(){
+                var x, y
+                x = parseInt(document.getElementById('num1').value)
+                y = parseInt(document.getElementById('num2').value)
+ 
+                while(x!=y)
+                {
+                    if(x>y) {
+                        x = x-y;
+                    }
+                    else {
+                        y = y-x;
+                    }
+                }
+                document.getElementById('result').value = x
+                console.log(x)
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Enter two Number To Calculate GCD</h1>
+        <hr color="red">
+        <div class="container">
+            Enter Two Numbers: 
+            <form action="POST" name="myGcdCalculator"><br><br>
+                Enter Number 1 : <input type="text" value="" id="num1"><br><br>
+                Enter Number 2 : <input type="text" value="" id="num2"><br><br>
+                <input type="button" value="Calculate GCD" name="resultBtn" onclick="gcd()"><br><br>
+                Gcd is: <input type="text" name="result" id="result" value="">
+            </form>
+        </div>
+<a href="calculator.html">Readme...</a>
+
+    </body>
+</html>
