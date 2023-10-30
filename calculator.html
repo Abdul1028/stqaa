@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>
+Arithmetic Calculation
+</title>
+<script type="text/javascript">
+var n1,n2,total;
+
+function load()
+{
+n1=Number(document.getElementById("num1").value);
+n2=Number(document.getElementById("num2").value);
+}
+
+function Add()
+{
+load();
+total=n1+n2;
+document.getElementById("result").value=total;
+}
+
+function Sub()
+{
+load();
+total=n1-n2;
+document.getElementById("result").value=total;
+}
+
+function Div()
+{
+load();
+total=n1/n2;
+document.getElementById("result").value=total;
+}
+
+function Mul()
+{
+load();
+total=n1*n2;
+document.getElementById("result").value=total;
+}
+
+</script>
+</head>
+<body>
+<center>
+<font color="black"><h1><b>Arithmetic Operation</b></h1></font>
+<hr color="red"></hr>
+<b>Enter two numbers :</b>
+<br/><br/>
+<b>Number 1 : </b><input  id="num1">
+<br/><br/>
+<b>Number 2 : </b><input  id="num2">
+<br/><br/>
+<button type=submit  onClick="Add()">Add</button>
+&nbsp
+<button type=submit  onClick="Sub()">Sub</button>
+&nbsp
+<button type=submit  onClick="Div()">Div</button>
+&nbsp
+<button type=submit  onClick="Mul()">Mul</button>
+<br/><br/>
+<b>Result is : </b><input  id="result">
+</center>
+</body>
+</html>
